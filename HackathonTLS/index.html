@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+            <meta charset='utf-8'>
+            <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+            <title></title>
+            <meta name='viewport' content='width=device-width, initial-scale=1'>
+            <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+            
+            
+</head>
+<body>
+         
+            <h1>Selecciona un dispositivo</h1>
+	<div>
+		<select name="listaDeDispositivos" id="listaDeDispositivos"></select>
+		<button id="boton">Tomar foto</button>
+	</div>
+	<br>
+	<video muted="muted" id="video"></video>
+	<canvas id="canvas" style="display: none;"></canvas>
+</body>
+
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-database.js"></script>
+            <script>
+                        // Your web app's Firebase configuration
+                        var firebaseConfig = {
+                          apiKey: "AIzaSyBLMrcIL2PC3gv59M8nG4eX9IbOT8FX5SI",
+                          authDomain: "hackathontls.firebaseapp.com",
+                          databaseURL: "https://hackathontls.firebaseio.com",
+                          projectId: "hackathontls",
+                          storageBucket: "hackathontls.appspot.com",
+                          messagingSenderId: "345440720165",
+                          appId: "1:345440720165:web:4f9f5e90d2ba09e8c1b6cc"
+                        };
+                        // Initialize Firebase
+                        firebase.initializeApp(firebaseConfig);
+                      </script>
+                      <script src='main.js'></script>
+                      <script src='firebase.js'></script>
+                      <script src='camara.js'></script>
+</html>
